@@ -14,9 +14,9 @@ app.use(express.json()); // Parse JSON bodies
 // MySQL connection setup
 const db = mysql.createConnection({
   host: 'localhost',
-  user: 'root',
-  password: 'nithin1k@$',
-  database: 'flashcards_db'
+  user: process.env.username ,
+  password: process.env.password ,
+  database: process.env.database
 });
 
 db.connect((err) => {
