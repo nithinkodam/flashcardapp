@@ -14,7 +14,7 @@ app.use(express.json()); // Parse JSON bodies
 // MySQL connection setup
 const db = mysql.createConnection({
   host: 'localhost',
-  user: process.env.username ,
+  user: process.env.user ,
   password: process.env.password ,
   database: process.env.database
 });
